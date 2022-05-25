@@ -78,6 +78,8 @@
     array的键值为表的名称或是别名，值是一个两元素的array，键值分别是0和1
     第一个值为`join`的类型，第二个与`$conds`中的参数要求相同，因此它也可以是一个SQL片段字符串，或是这类字符串的array，当使用array时，所有条件关系为`AND`
     例如：`[ 'page' => [ 'LEFT JOIN', 'page_latest=rev_id' ] ]`
+    需要`JOIN`的表，要在`$table`中声明（并指定别名）
+    此外，`JOIN`只能在`$table`中的最后一个表执行（代码会将`$table`分别处理成两个数组，一个是`FROM`，一个是`JOIN`，最后2个字符串连接在一起，所以只有最后一个表会连接到`JOIN`上）
 
 ## 返回值
 `IResultWrapper|bool`
