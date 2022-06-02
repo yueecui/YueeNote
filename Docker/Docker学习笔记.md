@@ -1,5 +1,24 @@
 # Docker学习笔记
 
+## 常用修改
+Windows10修改镜像地址
+
+托盘图标→Settings→Docker Engine，加入以下片段
+``` json
+"registry-mirrors": [
+    "https://hub-mirror.c.163.com",
+    "https://mirror.baidubce.com"
+]
+```
+
+## 基本概念
+
+概念|称呼|说明
+-|-|-
+Image|镜像|镜像是一个可以被容器使用的软件包，它包含了一个或多个文件，可以在容器中运行。
+Container|容器|容器是一个运行在一个特定的系统上的进程，它包含了一个或多个文件在容器中运行。可以理解为镜像的实例。
+
+## 常用命令行
 指令|说明
 -|-
 `docker build -t <image-name> .`|使用当前目录（`.`表示当前目录）下的Dockerfile来创建image
@@ -12,7 +31,7 @@
 `docker volume create <volume-name>`|创建volume
 `docker network create <name>`|
 
-#### docker run
+### docker run
 参数|说明
 -|-
 `--name <container-name>`|指定一个容器的名字，不指定的话会随机生成名字
