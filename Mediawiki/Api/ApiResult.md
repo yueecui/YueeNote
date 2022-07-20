@@ -6,4 +6,4 @@
 
 方法|说明
 -|-
-`addValue($path, $name, $value, $flags)`|path为结果路径<br>array的话可以生成多层<br>name是key<br>flags是二进制flags，具体用时再查
+`addValue($path, $name, $value, $flags)`|path为结果路径，以array的话可以生成多层<br>name是key<br>flags是二进制flags，具体用时再查
