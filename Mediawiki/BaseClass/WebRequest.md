@@ -10,6 +10,8 @@
 
 方法|类型|说明
 -|-|-
+`getMethod()`|string|获取请求的方法，如`GET`、`POST`、`HEAD`等
+`wasPosted()`|bool|判断是否是POST请求
 `getValues()`|array|获取全部输入值
 `getValueNames($exclude = [])`|array|
 `getCheck($name)`|bool|检查参数是否设置

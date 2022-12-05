@@ -6,14 +6,14 @@
 /**
  * Execute a SELECT query constructed using the various parameters provided.
  * See below for full details of the parameters.
- * 
+ *
  * @param string|array $table Table name
  * @param string|array $vars Field names
  * @param string|array $conds Conditions
  * @param string $fname Caller function name
  * @param array $options Query options
  * @param array $join_conds Join conditions
- * 
+ *
  * @return IResultWrapper|bool
  */
 	public function select(
